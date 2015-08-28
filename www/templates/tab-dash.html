@@ -14,14 +14,15 @@
           
           <div class="item range">
             <i class="icon ion-arrow-shrink"></i>
-            <input ng-model="data.zoom" type="range" name="zoom" min="50" max="200" value="100">
+            <input ng-model="data.zoom" type="range" name="zoom" min="10" max="100" value="100">
             <i class="icon ion-arrow-expand"></i>
           </div>
           
       <br>
           
+      
           
-          <div class="button button-positive" ngf-select="upload($file)" ngf-capture="'other'">
+          <div class="button button-positive" ngf-select="upload($file)" ngf-capture="'other'" accept="image/*">
             Take picture
           </div>
           
