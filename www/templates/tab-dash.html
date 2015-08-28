@@ -1,0 +1,35 @@
+<ion-view view-title="Postcard">
+  <ion-content scroll="false" class="padding">
+
+    
+   
+    <div>
+          
+          
+          <div class="square">
+              <div class="content">
+                  <img ng-style="draggedStyle" on-release="onRelease($event)" on-drag="onDrag($event)" style="float:left;" ngf-src="file">
+              </div>
+          </div>
+          
+          <div class="item range">
+            <i class="icon ion-arrow-shrink"></i>
+            <input ng-model="data.zoom" type="range" name="zoom" min="50" max="200" value="100">
+            <i class="icon ion-arrow-expand"></i>
+          </div>
+          
+      <br>
+          
+          
+          <div class="button button-positive" ngf-select="upload($file)" ngf-capture="'camera'">
+            Take picture
+          </div>
+          
+          <button ng-if="file" class="button button-positive">
+            Print
+          </button>
+          
+        </div>
+    
+  </ion-content>
+</ion-view>

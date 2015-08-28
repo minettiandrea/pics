@@ -1,0 +1,17 @@
+/* Empty. Add your own CSS if you like */
+
+
+.square {
+    float:left;
+    position: relative;
+    width: 100%;
+    padding-bottom: 100%; /* = width for a 1:1 aspect ratio */
+    overflow:hidden;
+    margin-bottom: 20px;
+}
+
+.content {
+    position:absolute;
+    height:100%; 
+    width:100%;
+}
